@@ -1,2 +1,1 @@
-# codingtest
-# codingtest
+# Pracice of coding test
