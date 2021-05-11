@@ -80,18 +80,18 @@ public class Main {
 		Collections.sort(busZeroList);
 		
 		// 0을 거치지 않는 노선 
-		long right = 0;
+		long endPoint = 0;
 		Bus bus = null;
 		for (int i=0; i<busList.size(); i++) {
 			bus = busList.get(i);
-			if (bus.end <= right) {
+			if (bus.end <= endPoint) {
 				answer[bus.index] = true;
 			} else {
-				right = bus.end;
+				endPoint = bus.end;
 			}
 			
-			// 0을 거치는 노선의 시작점 < 0을 거치지 않는 노선의 시작점
-			// 0을 거치는 노선의 도착점 > 0을 거치지 않는 노선의 도착점 
+			// 0을 거치지 않는 노선의 시작점 <= 0을 거치는 노선의 최소 시작점
+			// 0을 거치지 않는 노선의 도착점 >= 0을 거치는 노선의 최대 도착점
 			// 반드시 0을 거치는 노선은 0을 거치지 않는 노선에 포함
 			if (minStart <= bus.start || maxEnd >= bus.end) {
 				answer[bus.index] = true;
@@ -99,16 +99,15 @@ public class Main {
 		}
 		
 		// 0을 거치는 노선
-		right = 0;
+		endPoint = 0;
 		for (int i=0; i<busZeroList.size(); i++) {
 			bus = busZeroList.get(i);
-			if (bus.end <= right) {
+			if (bus.end <= endPoint) {
 				answer[bus.index] = true;
 			} else {
-				right = bus.end;
+				endPoint = bus.end;
 			}
 		}
-		
 	}
 	
 	private static void printAnswer() throws Exception {
