@@ -79,17 +79,15 @@ public class Main {
 					continue;
 				}
 				
-				if (newX >= 0 && newX < n && newY >= 0 && newY < m) {
-					if (map[newX][newY] == 0) {
-						// 벽이 없고 이동 가능한 경우
-						isVisited[newX][newY] = block;
-						queue.add(new Pos(newX, newY, currDist + 1, block));
-					} else {
-						// 벽이 있고 벽을 부술 수 있는 경우 
-						if (block == 0) {
-							isVisited[newX][newY] = block+1;
-							queue.add(new Pos(newX, newY, currDist + 1, block+1));
-						}
+				if (map[newX][newY] == 0) {
+					// 벽이 없고 이동 가능한 경우
+					isVisited[newX][newY] = block;
+					queue.add(new Pos(newX, newY, currDist + 1, block));
+				} else {
+					// 벽이 있고 벽을 부술 수 있는 경우 
+					if (block == 0) {
+						isVisited[newX][newY] = block+1;
+						queue.add(new Pos(newX, newY, currDist + 1, block+1));
 					}
 				}
 			}
