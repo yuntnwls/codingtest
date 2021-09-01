@@ -9,9 +9,17 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-import com.study.ch01.T1966.Document;
-
 public class T1966_Answer {
+	static class Document {
+		int index;
+		int importance;
+		
+		public Document(int index, int importance) {
+			this.index = index;
+			this.importance = importance;
+		}
+	}
+	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int t = Integer.parseInt(br.readLine());
@@ -34,7 +42,7 @@ public class T1966_Answer {
 			}
 			while (true) {
 				Document current = queue.poll();
-				// 가장 중요도가 높은경우 출력 
+				// 媛��옣 以묒슂�룄媛� �넂��寃쎌슦 異쒕젰 
 				if (current.importance == pQueue.peek()) {
 					answer++;
 					pQueue.poll();
