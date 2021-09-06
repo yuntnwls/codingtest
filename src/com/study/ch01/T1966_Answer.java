@@ -42,7 +42,7 @@ public class T1966_Answer {
 			}
 			while (true) {
 				Document current = queue.poll();
-				// 가장 중요도가 높은경우 출력 
+				// 媛��옣 以묒슂�룄媛� �넂��寃쎌슦 異쒕젰 
 				if (current.importance == pQueue.peek()) {
 					answer++;
 					pQueue.poll();
