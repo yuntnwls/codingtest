@@ -9,9 +9,17 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-import com.study.ch01.T1966.Document;
-
 public class T1966_Answer {
+	static class Document {
+		int index;
+		int importance;
+		
+		public Document(int index, int importance) {
+			this.index = index;
+			this.importance = importance;
+		}
+	}
+	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int t = Integer.parseInt(br.readLine());
