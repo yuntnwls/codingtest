@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-public class T5720_Answer {
+public class T5719_Answer {
 	// 다익스트라 알고리즘 : https://youtu.be/611B-9zk2o4
 	// 최단 경로를 저장하는 리스트(역으로 저장)
 	private static List<List<Road>> parentRoad = null;
