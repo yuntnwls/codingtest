@@ -3,11 +3,10 @@ package com.programmers.greedy;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.PriorityQueue;
 
+// https://programmers.co.kr/learn/courses/30/lessons/42861?language=java
 public class T42861 {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

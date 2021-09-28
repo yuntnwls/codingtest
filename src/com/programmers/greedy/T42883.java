@@ -3,10 +3,8 @@ package com.programmers.greedy;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+// https://programmers.co.kr/learn/courses/30/lessons/42883?language=java
 public class T42883 {
-	
-//	private static long max = 0;
-	
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String number = br.readLine();	// 숫자로 이루어진 문자열 
