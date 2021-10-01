@@ -1,4 +1,4 @@
-package com.programmers.check;
+package com.programmers.study.check;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
