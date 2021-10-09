@@ -1,4 +1,4 @@
-package com.backjoon.dp;
+package com.backjoon.dp.t2167;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 // 누적합을 미리 구해두는 방식 
 // DP[i] = i 까지의 합 
 // i부터 j까지의 합은 DP[i] - DP[j-1] => j-1까지 더한 합들에서 i까지 더한 합들을 빼준다 
-public class T2167 {
+public class Main {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
