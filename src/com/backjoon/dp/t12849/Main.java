@@ -2,8 +2,6 @@ package com.backjoon.dp.t12849;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
 
 // https://www.acmicpc.net/problem/12849
 public class Main {
