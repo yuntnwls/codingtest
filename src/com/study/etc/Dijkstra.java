@@ -46,6 +46,8 @@ public class Dijkstra {
 			int weight = Integer.parseInt(st.nextToken());
 			// start에서 end로 가는 가중치 저장 
 			nodes[start].add(new Node(end, weight));
+			// 양방향인 경우 해당 코드도 추가
+//			nodes[end].add(new Node(end, weight));
 		}
 		
 		dijkstra(k);
