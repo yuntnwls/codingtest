@@ -24,7 +24,8 @@ public class T12486 {
 		Arrays.sort(times);
 		
 		long left = 1; // 총 시간을 찾기위한 가장 작은 값 
-		long right = (long) n*times[times.length-1]; // 총 시간을 찾기 위한 가장 큰 값 
+		// 반드시 형변환이 필요!!!
+		long right = (long)n*times[times.length-1]; // 총 시간을 찾기 위한 가장 큰 값 
 		long mid;
 		long count; // 심사위원당 맡을 수 있는 인원 수 
 		long answer = right;
@@ -42,7 +43,7 @@ public class T12486 {
 			
 			if (n <= count) {
 				// 맡을수 있는 인원수가 주어진 인원수보다 많다면 더 작은 값 가능 
-				answer = mid;
+				answer = Math.min(answer, mid);
 				right = mid-1;
 			} else {
 				left = mid+1;

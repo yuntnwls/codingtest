@@ -1,4 +1,4 @@
-package com.backjoon.graphtraversal.t1260;
+package com.study.etc;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
